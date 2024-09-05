@@ -1,0 +1,443 @@
+@font-face {
+    font-family: 'PixelR10';
+    src: url('Assets/Fonts/PixelMplus10-Regular.ttf');
+}
+@font-face {
+    font-family: 'PixelR12';
+    src: url('Assets/Fonts/PixelMplus12-Regular.ttf');
+}
+@font-face{
+    font-family: 'PixelB10';
+    src: url('Assets/Fonts/PixelMplus10-Bold.ttf');
+} 
+@font-face{
+    font-family: 'PixelB12';
+    src: url('Assets/Fonts/PixelMplus12-Bold.ttf');
+}
+    
+        
+*{
+    font-family: 'PixelR12' , sans-serif ;
+}
+
+
+
+body{
+   
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    text-align: center;  
+}
+
+
+#top-section{
+    width: 100%;
+    height: 250px;
+    background-color: #000000;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    background-image: url(Assets/bg.png);
+    background-position: center -60px;
+    background-repeat: no-repeat;
+}
+
+
+#pfp{
+    position: relative;
+    left: 30%;
+    bottom: 40px;
+    border-radius: 50%;
+    scale: 0.45;
+    border: 15px solid #3e58ff;
+    
+}
+
+@media (max-width : 750px)
+{
+   
+    #pfp{ 
+      left: 0px;
+       scale: 0.4;
+    }
+}
+#intro{
+    position: relative;
+    bottom: 65%;
+    margin-left: 5%;
+    text-align: left;
+}
+#intro h1{
+    display: inline-block;
+
+}
+#adnan{
+    transition: transform 01s ease;
+    display: inline-block;
+    color:#2941e0;
+}
+#adnan:hover{
+    transform: scale(1.25);
+}
+
+
+#contact{
+    display: flex;
+}
+
+#github-section{
+    overflow: hidden;
+    display: flex;
+    margin-left: 2%;
+    margin-top: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: 3px solid #546bfd;
+    transition: transform 0.5s ease;
+    transition: width 0.5s ease;
+    cursor: pointer;
+}
+#github-section img{
+    scale: 2.3;
+    height: 100%;
+    width: 40px;
+    border-radius: 50%;
+}
+#github-section p{
+    font-weight: 600;
+    color: #546bfd;
+    font-size: 1.5rem;
+    position: relative;
+    bottom:15px;
+    left: 10px;
+}
+
+#github-section:hover{
+    width: 130px;
+}
+#github-section p:hover{
+    color: white;
+}
+#github-section:active{
+   border: 3px solid white;
+  
+}
+
+
+#phone-section{
+    overflow: hidden;
+    display: flex;
+    margin-left: 2%;
+    margin-top: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: 3px solid #546bfd;
+    transition: transform 0.5s ease;
+    transition: width 0.5s ease;
+    cursor: pointer;
+}
+#phone-section img{
+    scale: 1.2;
+    height: 100%;
+    width: 40px;
+    border-radius: 50%;
+}
+#phone-section p{
+    font-weight: 100;
+    color: #546bfd;
+    font-size: 1.04rem;
+    position: relative;
+    bottom:5px;
+    left: 5px;
+}
+#phone-section p:hover{
+    color: white;
+}
+
+#phone-section:hover{
+    width: 160px;
+}
+
+#phone-section:active{
+    border: 3px solid white;
+  
+}
+
+
+
+
+#email-section{
+    overflow: hidden;
+    display: flex;
+    margin-left: 2%;
+    margin-top: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: 3px solid #546bfd;
+    transition: transform 0.5s ease;
+    transition: width 0.5s ease;
+    cursor: pointer;
+}
+#email-section img{
+    scale: 1.45;
+    height: 100%;
+    width: 40px;
+    border-radius: 50%;
+}
+#email-section p{
+    font-weight: 100;
+    color: #546bfd;
+    font-size: 1.04rem;
+    position: relative;
+    bottom:5px;
+    left: 5px;
+}
+#email-section p:hover{
+    color: white;
+}
+
+#email-section:hover{
+    width: 250px;
+}
+
+#email-section:active{
+    border: 3px solid white;
+  
+}
+
+
+
+
+#about-section{
+    padding: 5%;
+    padding-left: 2%;
+    padding-top: 0%;
+    position: relative;
+    top: 220px;
+}
+#about-section h3{
+    font-weight: 100;
+    line-height: 35px;
+    width: 95%;
+   text-align: left;
+   margin-left: 5%; 
+   margin-bottom: 10px;
+   font-size: 1.75rem;
+}
+#about-section .content{
+    border-top: 1px solid white;
+    width: 80%;
+    font-family: 'PixelR10';
+    font-weight: lighter;
+    padding-top: 5px;
+    font-size: 1.4rem;
+    text-align: left;
+    margin-left: 4%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 30px;
+ }
+ #about-section #second-p{
+    padding-top: 0px;
+    margin-top: 0px;
+    border-top: none;
+ }
+.main-points{
+
+    width: 50%;
+    border-top:2px solid #ffffff;
+   font-size: 3rem;
+   text-align: left;
+   margin-left: 4%;
+}
+
+
+/* js rct html css*/
+#javascript{
+    display: inline-block;
+    transition: color 1s ease;
+    transition: transform 0.5s ease;
+    color: rgb(245, 245, 169);
+}
+
+#javascript:hover{
+transform: scale(1.09);
+color: yellow;
+
+}
+
+#css{
+    display: inline-block;
+    transition: color 1s ease;
+    transition: transform 0.5s ease;
+    color:  rgb(141, 152, 248);
+}
+#css:hover{
+    transform: scale(1.09);
+    color: rgb(123, 123, 250);
+}
+
+
+#html{
+    display: inline-block;
+    transition: color 1s ease;
+    transition: transform 0.5s ease;
+    color: rgb(248, 183, 140);
+}
+#html:hover{
+    transform: scale(1.09);
+    color: rgb(255, 102, 0);
+}
+
+
+#react{
+    display: inline-block;
+    transition: color 1s ease;
+    transition: transform 0.5s ease;
+    color: rgb(151, 221, 245);
+}
+#react:hover{
+    transform: scale(1.09);
+    color: rgb(0, 191, 255);
+}
+
+
+
+#skills-section{
+    text-align: left;
+    margin-left: 2%;
+    margin-top: 200px;
+    padding-bottom: 80px;
+    
+} 
+#skills-list{
+    list-style-type: none;
+    padding: 25px;
+    padding-top: 5px;
+     
+}
+#skills-list p{
+    font-size: 1.15rem;
+    line-height: 1.25rem;
+    padding-bottom: 10PX;
+}
+#skills-section h1{
+    padding-top: 10px;
+}
+
+#skills-section ul li:nth-child(1) h3{
+    transition: transform 0.5s ease;
+    width: 50px;
+    border-top: 2px solid yellow;
+    color: yellow;
+}
+
+#skills-section ul li:nth-child(2) h3{
+    transition: transform 0.5s ease;
+    width: 50px;
+    border-top: 2px solid rgb(255, 102, 0);
+  
+    color: rgb(255, 102, 0);
+}
+#skills-section ul li:nth-child(3) h3{
+    transition: transform 0.5s ease;
+    width: 50px;
+    border-top: 2px solid rgb(123, 123, 250);
+    color: rgb(123, 123, 250);
+}
+#skills-section ul li:nth-child(4) h3{
+    transition: transform 0.5s ease;
+    width: 50px;
+    border-top: 2px solid rgb(0, 191, 255);
+    color: rgb(0, 191, 255);
+}
+#skills-section ul li:nth-child(5) h3{
+    transition: transform 0.5s ease;
+    width: 250px;
+    padding-top: 5px;
+    border-top: 2px solid purple;
+    color: purple;
+}
+
+#skills-section ul li h3:hover{
+  transform: scale(1.1);
+}
+
+
+#skills-section ul li:nth-child(1) p{
+color: rgb(245, 245, 169);
+}
+#skills-section ul li:nth-child(2) p{
+  color: rgb(248, 183, 140);
+}
+#skills-section ul li:nth-child(3) p{
+ color:  rgb(187, 193, 250);
+}
+#skills-section ul li:nth-child(4) p{
+  color: rgb(169, 222, 240);
+}
+#skills-section ul li:nth-child(5) p{
+ color: rgb(214, 141, 214);
+}
+
+
+
+
+
+
+
+/*TRASH CAN
+  <img src="Assets/GitHub logo.png" id="github" width="20px" height="20px" alt="GitHub"><span id="ghtext">GitHub</span>
+  
+  #github{
+    background-color: #ffffff;
+    width: 3.7%;
+    scale: 1.5;
+    position: relative;
+    left: 2%;
+    top: 45px;
+   display: block;
+   border: 2px solid #2941e0;
+   border-radius: 50px;
+   transition: transform 0.5s ease;
+   transition: width 0.5s ease;
+   cursor: pointer;
+   
+}
+#ghtext{
+   position: relative;
+   top: 20px;
+   display: none;
+
+   color: #ffffff;
+}
+#github:hover{
+    transform: translateX(15%);
+    width: 15%;
+    
+}
+#github:hover::after{
+    content: "GitHub"; 
+}
+#github:active{
+background-color: #2941e0;
+color: white;
+}
+
+@media (min-width: 700px) {
+    #github{
+        width: 1.9%;
+    }
+    #github:hover{
+        width: 8%;
+    }
+    
+}
+
+  
+  
+  */

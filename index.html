@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Assets/MyProfPic.png">
+    <title>My portfolio</title>
+
+    <link rel="stylesheet" href="MyTheme.css">
+</head>
+<body>
+    <div id="top-section">
+         <img id="pfp" src="Assets/MyProfPic.png" alt="My Profile Picture">
+         <div id="intro"> <h1 id="hello">Hello there, this is <span id="adnan">Adnan</span> </h1>
+          
+            <div id="contact">
+                <div id="github-section" onclick="github()">
+                    <img src="/Assets/github white bg.png" alt="GitHub">
+                    <p>GitHub</p>
+                 </div>
+
+                 <div id="phone-section" onclick="Copynum()">
+                    <img src="/Assets/phone icon.png" alt="phone number">
+                    <p id="mynum">+966504807038</p>
+                 </div>
+
+
+                 <div id="email-section" onclick="Copymail()">
+                    <img src="/Assets/email logo nobg.png" alt="Email">
+                    <p id="mymail">adnanhamdo2005@gmail.com</p>
+                 </div>
+
+
+            </div>
+         
+
+         </div>
+    </div>
+
+        <div id="about-section">
+        <h1 id="about-me" class="main-points">About me:</h1> 
+        <h3>I'm a passionate self-taught frontend developer with a strong foundation in <span id="javascript"> JavaScript </span>, <span id="css"> CSS </span>, <span id="html"> HTML</span>, and <span id="react"> React.JS</span>.</h3>
+        <h3 class="content">My journey into web development began with a passion for creating interactive and user-friendly web applications, which has since grown into a continuous pursuit of learning and growth.</h3>
+        <h3 id="second-p" class="content">I've navigated the world of web development through a combination of online courses, tutorials, and hands-on practice, constantly pushing myself to master new concepts and tools. </h3>
+        </div>
+
+        <div id="skills-section">
+            <h1 id="skills" class="main-points">Skills:</h1>
+            <ul id="skills-list">
+                <li><h3>JavaScript</h3><p>I've learnt javascript in my first steps in web development,
+                                          and ever since, I've developed many interactive features and web apps relying on it, it's right to say that JavaScript is the backbone of my web development skills.</p></li>
+                <li><h3>HTML</h3><p>
+                    I develop well-organized HTML structures for my projects to make them both easy to navigate and have a good optimization for search engines.
+                </p></li>
+                <li><h3>CSS</h3><p> I Have a great experience in creating and designing a responsive and appealing layouts that work on multiple devices by using CSS.</p></li>
+
+                <li><h3>React.JS</h3><p>Not much experience using React.js , but also not the worst in that field, I am able of creating simple apps using it, in fact React is what I'm learning in the mean time.</p></li>
+                <li><h3>Unity game engine and C#</h3> <p>In terms of my skills, unity and C# must have an honorable mention, how not and they are what I've entered the world of programming with! now I can easily say that I have a great experience of approximately <strong>1 and a half years </strong> with them. </p></li>
+
+            </ul>
+
+
+
+
+        </div>
+
+
+
+
+        <script>
+            function Copynum()
+            {
+                const myText = document.getElementById('mynum').innerHTML;
+
+                navigator.clipboard.writeText(myText).then(() => { 
+
+
+                }).catch(err => {
+                    console.error('Failed to copy text: ', err);
+                })
+            }
+            function Copymail()
+            {
+                const myMail = document.getElementById('mymail').innerHTML;
+
+                navigator.clipboard.writeText(myMail).then(() => { 
+
+
+                }).catch(err => {
+                    console.error('Failed to copy text: ', err);
+                })
+            }
+            function github()
+            {
+                window.location = "https://github.com/ADNAN330";
+            }
+
+
+        </script>
+        
+</body>
+</html>
