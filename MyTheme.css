@@ -73,6 +73,9 @@ html, body{
       left: 0px;
        scale: 0.4;
     }
+    #top-section{
+        width:120%;
+    }
 }
 #intro{
     position: relative;
