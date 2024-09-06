@@ -11,7 +11,8 @@
 <body>
     <div id="top-section">
         <div id="BG"></div>
-         <img id="pfp" src="Assets/MyProfPic.png" alt="My Profile Picture">
+        <div id="picplace"><img id="pfp" src="Assets/MyProfPic.png" alt="My Profile Picture"></div>
+         
          <div id="intro"> <h1 id="hello">Hello there, this is <span id="adnan">Adnan</span> </h1>
           
             <div id="contact">
@@ -73,7 +74,7 @@
             {
                 const myText = document.getElementById('mynum').innerHTML;
 
-                navigator.clipboard.writeText(myText).then(() => { 
+                navigator.clipboard.writeText(myText).then(() => { alert('Copied to your device');
 
 
                 }).catch(err => {
@@ -84,7 +85,7 @@
             {
                 const myMail = document.getElementById('mymail').innerHTML;
 
-                navigator.clipboard.writeText(myMail).then(() => { 
+                navigator.clipboard.writeText(myMail).then(() => {  alert('Copied to your device');
 
 
                 }).catch(err => {
