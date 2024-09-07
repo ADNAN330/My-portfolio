@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="MyTheme.css">
 </head>
 <body>
+
+    <nav><p onclick="toAbout()">About</p> <p onclick="toSkills()">Skills</p> <p onclick="toProjects()">Projects</p></nav>
     <div id="top-section">
         <div id="BG"></div>
         <div id="picplace"><img id="pfp" src="Assets/MyProfPic.png" alt="My Profile Picture"></div>
@@ -60,6 +62,15 @@
                 <li><h3>Unity game engine and C#</h3> <p>In terms of my skills, unity and C# must have an honorable mention, how not and they are what I've entered the world of programming with! now I can easily say that I have a great experience of approximately <strong>1 and a half years </strong> with them. </p></li>
 
             </ul>
+        </div>
+
+        <div id="projects-section">
+            <h1 id="projects" class="main-points">My Projects:</h1>
+            <h3 id="projects-description">I've worked on some projects with for various purposes, Despite that, I've published only one which is <span id="vbook" onclick="vbook()">VBook</span>, it's a frontend website project which is main purpose is to sell, buy, and create virtual books for everyone to read on. other than that, there are some tutorial projects like : to-do-list, a subscribtion card,
+                 meme/quotes/jokes/riddles generator website, and some mini games on unity that I prefer keeping for myself.(ALso check out this amazing website <a href="https://adnan330.github.io/My-portfolio/">here</a> )   </h3>
+
+
+
 
 
 
@@ -96,7 +107,24 @@
             {
                 window.location = "https://github.com/ADNAN330";
             }
+            function vbook()
+            {
+            window.location = "https://adnan330.github.io/VBook/";
+            }   
+            
 
+            function toAbout()
+            {
+                window.location = "#about-section";
+            }
+            function toSkills()
+            {
+                window.location = "#skills-section";
+            }
+            function toProjects()
+            {
+                window.location = "#projects-section";
+            }
 
         </script>
         

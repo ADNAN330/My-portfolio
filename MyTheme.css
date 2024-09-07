@@ -53,11 +53,12 @@ html, body{
 }
 #BG{
     position: relative;
+    bottom: 40px;
     z-index: -2;
     width: 100%;
     height: 200px;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
     background-image: url(Assets/bg.png);
     background-position: center -120px;
     min-width: 100%;
@@ -66,6 +67,13 @@ html, body{
 #picplace{
     display: flex;
     justify-content: end;
+    position: relative;
+    bottom: 30px;
+   
+   
+}
+#pfp:hover{
+    opacity: 0.2;
 }
 
 #pfp{
@@ -74,9 +82,29 @@ html, body{
     border-radius: 50%;
     scale: 0.45;
     border: 15px solid #3e58ff;
+    box-shadow: 0px 0px 30px 5px #546bfd;
+    transition: opacity 0.5s ease;
     
 }
 
+nav{
+   display: flex;
+   height: 40px;
+   background-color: #ffffff00;
+   opacity: 0.9;
+  
+}
+nav p{
+   
+margin-left: 2%;
+margin-right: 4%;
+cursor: pointer;
+height: 20px;
+}
+nav p:hover{
+    color: red;
+    border-bottom: 2px solid #ff0000;
+}
 
 #intro{
     position: relative;
@@ -86,24 +114,10 @@ html, body{
 }
 #intro h1{
     display: inline-block;
+    font-size: 2.05rem;
+    
+}
 
-}
-@media (max-width : 720px)
-{ 
-    #picplace{
-        justify-content: center;
-    }
-    #pfp{ 
-        bottom: 270px;
-       scale: 0.3;
-    }
-    #intro h1{
-        font-size: 1.35rem;
-    }
-    #about-me{
-      font-size: 2rem;
-    }
-}
 #adnan{
     transition: transform 01s ease;
     display: inline-block;
@@ -116,8 +130,9 @@ html, body{
 
 #contact{
     display: flex;
-    margin-top: 55px;
+    margin-top: 45px;
 }
+
 
 #github-section{
     overflow: hidden;
@@ -149,9 +164,11 @@ html, body{
 
 #github-section:hover{
     width: 130px;
+    box-shadow: 0px 0px 5px 5px #546bfd;
 }
 #github-section p:hover{
     color: white;
+  
 }
 #github-section:active{
    border: 3px solid white;
@@ -192,6 +209,7 @@ html, body{
 
 #phone-section:hover{
     width: 160px;
+    box-shadow: 0px 0px 5px 5px #546bfd;
 }
 
 #phone-section:active{
@@ -235,6 +253,7 @@ html, body{
 
 #email-section:hover{
     width: 250px;
+    box-shadow: 0px 0px 5px 5px #546bfd;
 }
 
 #email-section:active{
@@ -300,7 +319,6 @@ html, body{
 #javascript:hover{
 transform: scale(1.09);
 color: yellow;
-
 }
 
 #css{
@@ -345,13 +363,13 @@ color: yellow;
     text-align: left;
     margin-left: 2%;
     margin-top: 200px;
-    padding-bottom: 80px;
-    
 } 
 #skills-list{
     list-style-type: none;
     padding: 25px;
     padding-top: 5px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
      
 }
 #skills-list p{
@@ -365,36 +383,40 @@ color: yellow;
 
 #skills-section ul li:nth-child(1) h3{
     transition: transform 0.5s ease;
-    width: 50px;
+    width: 92px;
     border-top: 2px solid yellow;
     color: yellow;
+    
 }
 
 #skills-section ul li:nth-child(2) h3{
     transition: transform 0.5s ease;
-    width: 50px;
+    width: 35px;
     border-top: 2px solid rgb(255, 102, 0);
   
     color: rgb(255, 102, 0);
 }
 #skills-section ul li:nth-child(3) h3{
     transition: transform 0.5s ease;
-    width: 50px;
+    width: 28px;
     border-top: 2px solid rgb(123, 123, 250);
     color: rgb(123, 123, 250);
 }
 #skills-section ul li:nth-child(4) h3{
     transition: transform 0.5s ease;
-    width: 50px;
+    width: 75px;
     border-top: 2px solid rgb(0, 191, 255);
     color: rgb(0, 191, 255);
 }
 #skills-section ul li:nth-child(5) h3{
     transition: transform 0.5s ease;
-    width: 250px;
+    width: 225px;
     padding-top: 5px;
     border-top: 2px solid purple;
     color: purple;
+}
+#skills-section ul li h3{
+    margin-top: 40px;
 }
 
 #skills-section ul li h3:hover{
@@ -420,7 +442,56 @@ color: rgb(245, 245, 169);
 
 
 
+#projects-section h3{
+    font-weight: 100;
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    line-height: 1.5;
+}
+#vbook{  
+    color: rgb(252, 137, 137);
+    cursor: pointer;
+    transition: color 0.5s ease;
+  
 
+}
+#vbook:hover{   
+   color: red;
+}
+
+
+#projects-section h1{
+    margin-left: 30px;
+}
+#projects-section a{
+    color: red;
+}
+
+
+
+
+
+@media (max-width : 720px)
+{ 
+    #picplace{
+        justify-content: center;
+    }
+    #pfp{ 
+        bottom: 270px;
+       scale: 0.3;
+    }
+    #intro h1{
+        font-size: 1.35rem;
+    }
+   
+    #contact{
+        margin-top: 60px;
+    }
+   .main-points {
+    width: 70%;
+     }
+}
 
 
 
