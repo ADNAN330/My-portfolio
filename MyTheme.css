@@ -476,6 +476,9 @@ color: rgb(245, 245, 169);
    color: red;
 }
 
+#documents-section ul{
+    margin-left: 5%;
+}
 
 @media (max-width : 720px)
 { 
