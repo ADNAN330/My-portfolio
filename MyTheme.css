@@ -468,8 +468,13 @@ color: rgb(245, 245, 169);
     color: red;
 }
 
-
-
+#documents-section{
+    text-align: left;
+    margin-bottom: 60px;
+}
+#documents-section a{
+   color: red;
+}
 
 
 @media (max-width : 720px)
