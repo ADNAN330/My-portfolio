@@ -573,8 +573,9 @@ color: white;
     background-size: cover;
     background-position: center;
     font-size: 0.9rem;
-    line-height: 25px;
+    line-height: 225%;
     text-align: center;
+    background-attachment: fixed;
     
   }
   #secret-place li{
