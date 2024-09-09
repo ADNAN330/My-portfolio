@@ -573,19 +573,19 @@ color: white;
     background-size: cover;
     background-position: center;
     font-size: 0.9rem;
-    line-height: 225%;
+    line-height: 200%;
     text-align: center;
-    background-attachment: fixed;
+  
     
   }
   #secret-place li{
     padding: 0px 5%; 
     list-style: none;
-    font-size: 120%;
+    font-size: 1.03rem;
   }
   #secret-place h1 , #secret-place h2 , #secret-place h3{
     padding: 0px 5%; 
-    margin-top: 50px;
+    margin-top: 30px;
     transition: all 01s ease;
     line-height: 40px;
     font-weight: 100;
@@ -594,7 +594,7 @@ color: white;
     color: #ff0000;
   }
   #secret-place h4{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     opacity: 0.05;
     transition: color 0.5s;
     color: #ae00ff;
