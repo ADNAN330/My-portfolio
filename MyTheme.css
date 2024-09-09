@@ -574,24 +574,27 @@ color: white;
     background-position: center;
     font-size: 0.9rem;
     line-height: 25px;
+    text-align: center;
+    
   }
   #secret-place li{
     padding: 0px 5%; 
     list-style: none;
+    font-size: 120%;
   }
   #secret-place h1 , #secret-place h2 , #secret-place h3{
     padding: 0px 5%; 
     margin-top: 50px;
     transition: all 01s ease;
     line-height: 40px;
+    font-weight: 100;
   }
   #secret-place h1:hover{
     color: #ff0000;
   }
   #secret-place h4{
-    margin-top: 10%;
     font-size: 1.5rem;
-    opacity: 0;
+    opacity: 0.05;
     transition: color 0.5s;
     color: #ae00ff;
   }
