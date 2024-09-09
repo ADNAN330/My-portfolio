@@ -10,13 +10,14 @@
 </head>
 <body>
 
-    <nav><p onclick="toAbout()">About</p> <p onclick="toSkills()">Skills</p> <p onclick="toProjects()">Projects</p></nav>
+    <nav><p onclick="toAbout()">About</p> <p onclick="toSkills()">Skills</p> <p onclick="toProjects()">Projects</p>
+         <p onclick="toDocuments()"> Documents</p> <p id="hours" onclick="toSecret()"></p> </nav>
     <div id="top-section">
         <div id="BG"></div>
         <div id="picplace"><img id="pfp" src="Assets/MyProfPic.png" alt="My Profile Picture"></div>
          
          <div id="intro"> <h1 id="hello">Hello there, this is <span id="adnan">Adnan</span> </h1>
-          
+            
             <div id="contact">
                 <div id="github-section" onclick="github()">
                     <img src="./Assets/github_white_bg.png" alt="GitHub">
@@ -66,21 +67,41 @@
 
         <div id="projects-section">
             <h1 id="projects" class="main-points">My Projects:</h1>
-            <h3 id="projects-description">I've worked on some projects with for various purposes, Despite that, I've published only one which is <span id="vbook" onclick="vbook()">VBook</span>, it's a frontend website project which is main purpose is to sell, buy, and create virtual books for everyone to read on. other than that, there are some tutorial projects like : to-do-list, a subscribtion card,
+            <h3 id="projects-description">I've worked on some projects for various purposes, Despite that, I've published only one which is <span id="vbook" onclick="vbook()">VBook</span>, it's a frontend website project which is main purpose is to sell, buy, and create virtual books for everyone to read on. other than that, there are some tutorial projects like : to-do-list, a subscribtion card,
                  meme/quotes/jokes/riddles generator website, and some mini games on unity that I prefer keeping for myself.(ALso check out this amazing website <a href="https://adnan330.github.io/My-portfolio/">here</a> )   </h3>
+        </div>
 
-
-
-
-
-
-
+        <div id="documents-section">
+            <h1 class="main-points">Other documents:</h1>
+            <ul>
+                <li>Resume/CV: <a href="Assets/AdnanCV.pdf">Have a look here</a></li>
+                <li>IELTS grade: 7.0/9.0 <a href="Assets/IELTSGRADE.pdf">Have a look here</a></li>
+             
+            </ul>
         </div>
 
 
 
 
         <script>
+           
+            function time()
+            {
+                let second = new Date().getSeconds();
+                let minute = new Date().getMinutes();
+                let hour = new Date().getHours();
+                let daytime = hour >= 12 ? "PM" : "AM";
+                hour = hour % 12 || 12;
+                minute = minute >= 10 ? minute : "0" + minute;
+                second = second >= 10 ? second : "0" + second;
+
+                const timeString = hour +":" + minute +":"+ second + "  " + daytime ;
+           document.getElementById("hours").innerHTML = timeString;
+            }
+            setInterval(time, 1000);
+           
+
+        
             function Copynum()
             {
                 const myText = document.getElementById('mynum').innerHTML;
@@ -125,6 +146,24 @@
             {
                 window.location = "#projects-section";
             }
+            function toDocuments()
+            {
+                window.location = "#documents-section";
+            }
+
+            let c = 0;
+            function toSecret()
+              {
+              
+               c++; 
+               if(c >= 24)
+               {
+               window.location = "secret.html";
+                 c = 0;
+               }
+            console.log(c);
+               
+              }
 
         </script>
         
