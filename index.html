@@ -10,8 +10,8 @@
 </head>
 <body>
 
-    <nav><p onclick="toAbout()">About</p> <p onclick="toSkills()">Skills</p> <p onclick="toProjects()">Projects</p>
-         <p onclick="toDocuments()"> Documents</p> <p id="hours" onclick="toSecret()"></p> </nav>
+    <nav><p onclick="openThis('#about-section')">About</p> <p onclick="openThis('#skills-section')">Skills</p> <p onclick="openThis('#projects-section')">Projects</p>
+         <p onclick="openThis('#documents-section')"> Documents</p> <p id="hours" onclick="toSecret()"></p> </nav>
     <div id="top-section">
         <div id="BG"></div>
         <div id="picplace"><img id="pfp" src="Assets/MyProfPic.png" alt="My Profile Picture"></div>
@@ -19,7 +19,7 @@
          <div id="intro"> <h1 id="hello">Hello there, this is <span id="adnan">Adnan</span> </h1>
             
             <div id="contact">
-                <div id="github-section" onclick="github()">
+                <div id="github-section" onclick="openThis('https://github.com/ADNAN330')">
                     <img src="./Assets/github_white_bg.png" alt="GitHub">
                     <p>GitHub</p>
                  </div>
@@ -59,7 +59,7 @@
                 </p></li>
                 <li><h3>CSS</h3><p> I Have a great experience in creating and designing a responsive and appealing layouts that work on multiple devices by using CSS.</p></li>
 
-                <li><h3>React.JS</h3><p>Not much experience using React.js , but also not the worst in that field, I am able of creating simple apps using it, in fact React is what I'm learning in the mean time.</p></li>
+                <li><h3>React.JS</h3><p>I have decent knowledge in this field that allows me to create simple interactive apps for everyday's basic usage.</p></li>
                 <li><h3>Unity game engine and C#</h3> <p>In terms of my skills, unity and C# must have an honorable mention, how not and they are what I've entered the world of programming with! now I can easily say that I have a great experience of approximately <strong>1 and a half years </strong> with them. </p></li>
 
             </ul>
@@ -67,7 +67,9 @@
 
         <div id="projects-section">
             <h1 id="projects" class="main-points">My Projects:</h1>
-            <h3 id="projects-description">I've worked on some projects for various purposes, Despite that, I've published only one which is <span id="vbook" onclick="vbook()">VBook</span>, it's a frontend website project which is main purpose is to sell, buy, and create virtual books for everyone to read on. other than that, there are some tutorial projects like : to-do-list, a subscribtion card,
+            <h3 id="projects-description">I've worked on some projects for various purposes, So I've published some which I worked really hard on , for example <span class="prolinks" onclick="openThis('https://adnan330.github.io/VBook/')">VBook</span>, Which is a frontend website project that its main purpose is to sell, buy, and create virtual books for everyone to read on.<br> <br>
+                 Another project is <span class="prolinks"" onclick="openThis('https://adnan330.github.io/MaalApp/')">MAAL</span>, MAAL is a financial app that was built via ReactJS, this app's purpose is to help user stay financial and know more about what they spend or get by manual adding for each time the user uses his money to buy something for example, or if the user gets some money as to receive a salary for example. All that done in this safe and free service which is called MAAL. <br> <br>
+                  other than that, there are some tutorial projects like : to-do-list, a subscribtion card,
                  meme/quotes/jokes/riddles generator website, and some mini games on unity that I prefer keeping for myself.(ALso check out this amazing website <a href="https://adnan330.github.io/My-portfolio/">here</a> )   </h3>
         </div>
 
@@ -88,8 +90,8 @@
         <script>
             let pixelButton = document.getElementById("pixel");
             let normalButton = document.getElementById("normal");
-            normalButton.style.backgroundColor = "white";
-            normalButton.style.color = "#2941e0";
+            pixelButton.style.backgroundColor = "white";
+            pixelButton.style.color = "#2941e0";
             let everything = document.querySelectorAll("*");
           
 
@@ -155,32 +157,15 @@
                     console.error('Failed to copy text: ', err);
                 })
             }
-            function github()
+    
+            function openThis(lnk)
             {
-                window.location = "https://github.com/ADNAN330";
-            }
-            function vbook()
-            {
-            window.location = "https://adnan330.github.io/VBook/";
+            window.location = lnk;
             }   
             
 
-            function toAbout()
-            {
-                window.location = "#about-section";
-            }
-            function toSkills()
-            {
-                window.location = "#skills-section";
-            }
-            function toProjects()
-            {
-                window.location = "#projects-section";
-            }
-            function toDocuments()
-            {
-                window.location = "#documents-section";
-            }
+           
+        
 
             let c = 0;
             function toSecret()

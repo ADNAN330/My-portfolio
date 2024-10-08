@@ -17,7 +17,7 @@
     
         
 *{
-    font-family: sans-serif;
+    font-family: pixelR12;
 padding-right: 0px; 
 
 }
@@ -452,14 +452,15 @@ color: rgb(245, 245, 169);
     margin-right: 5%;
     line-height: 1.5;
 }
-#vbook{  
+
+.prolinks{  
     color: rgb(252, 137, 137);
     cursor: pointer;
     transition: color 0.5s ease;
   
 
 }
-#vbook:hover{   
+.prolinks:hover{   
    color: red;
 }
 
