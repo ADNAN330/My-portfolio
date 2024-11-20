@@ -518,11 +518,11 @@ color: rgb(245, 245, 169);
 }
 
 #rights{
-    color: #2941e0;
+    color: #ffffff;
     cursor: pointer;
  }
  #rights:hover{
-    color: #ffffff;
+    color: #2941e0;
  }
  #C{
     font-family: sans-serif;
