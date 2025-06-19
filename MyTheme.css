@@ -19,7 +19,7 @@
 *{
     font-family: pixelR12;
     padding-right: 0px; 
-
+      user-select: none;
 }
 
 
@@ -41,6 +41,7 @@ html, body{
     padding: 0;
     overflow-x: hidden;
 }
+
 
 
 #top-section{
@@ -69,9 +70,7 @@ html, body{
    
    
 }
-#pfp:hover{
-    opacity: 0.2;
-}
+
 
 #pfp{
     position: relative;
@@ -83,7 +82,9 @@ html, body{
     transition: opacity 0.5s ease;
     
 }
-
+#pfp:hover{
+    opacity: 0.1;
+}
 nav{
    display: flex;
    height: 40px;
@@ -413,11 +414,34 @@ color: yellow;
 }
 #skills-section ul li:nth-child(5) h3{
     transition: transform 0.5s ease;
+    width: 75px;
+    padding-top: 5px;
+    border-top: 2px solid orange;
+    color: orange;
+}
+#skills-section ul li:nth-child(6) h3{
+    transition: transform 0.5s ease;
+    width: 90px;
+    padding-top: 5px;
+    border-top: 2px solid #4bb2fc;
+    color: #4bb2fc;
+}
+#skills-section ul li:nth-child(7) h3{
+    transition: transform 0.5s ease;
     width: 225px;
     padding-top: 5px;
     border-top: 2px solid purple;
     color: purple;
 }
+#skills-section ul li:nth-child(8) h3{
+    transition: transform 0.5s ease;
+    width: 85px;
+    padding-top: 5px;
+    border-top: 2px solid #2941e0;
+    color: #2941e0;
+}
+
+
 #skills-section ul li h3{
     margin-top: 40px;
 }
@@ -440,9 +464,17 @@ color: rgb(245, 245, 169);
   color: rgb(169, 222, 240);
 }
 #skills-section ul li:nth-child(5) p{
+ color: rgb(254, 199, 97);
+}
+#skills-section ul li:nth-child(6) p{
+ color: lightblue;
+}
+#skills-section ul li:nth-child(7) p{
  color: rgb(214, 141, 214);
 }
-
+#skills-section ul li:nth-child(8) p{
+ color: #5265e0;
+}
 
 
 #projects-section h3{
@@ -472,6 +504,80 @@ color: rgb(245, 245, 169);
     color: red;
 }
 
+
+
+#gallery-section h3{
+    font-weight: 100;
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#gallery-image {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+#gallery-section img{
+    max-width: 85%;
+    height: auto;
+    display: block;
+    scale: 0.95;
+    transition: all ease 0.3s;
+    border: 2px solid #ffffff00;
+}
+#gallery-section img:hover{
+    scale: 1;
+    border: 2px solid #2941e0;
+}
+#rightAr{
+margin-right: 5%;
+cursor: pointer;
+transition: all ease 0.5s;
+}
+#rightAr:hover{
+    transform: translateX(3px);
+    color: #2941e0;
+}
+#leftAr{
+margin-left: 5%;
+cursor: pointer;
+transition: all ease 0.5s;
+}
+#leftAr:hover{
+    transform: translateX(-3px);
+    color: #2941e0;
+}
+#wrapper {
+  width: 100%;
+  aspect-ratio: 6 / 3;        
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;        
+}
+#pixel-container{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#image-name{
+    transition: all ease 0.2s;
+    margin-left:10px ;
+}
+#image-name:hover{
+color: #2941e0;
+}
+
+
+
 #documents-section{
     text-align: left;
     margin-bottom: 60px;
@@ -485,32 +591,30 @@ color: rgb(245, 245, 169);
 }
 
 #font-change{
+    backdrop-filter: blur(2px);
     scale: 2;
     position: absolute;
     bottom: 10%;
-    right: 10%;
+    left: 10%;
 }
 #pixel{
-    background-color: #2941e0;
+    background-color: #2941e0a2;
     color: white;
     padding-right: 2px;
-    opacity: 0.6;
     cursor: pointer;
     font-family: "pixelR12";
     border: none;
-    border-right: 1px solid #ff0000;
-    transition: color 0.5s ease;
-
+    border-right: 1px solid #404040;
+    transition: all 0.5s ease;
 }
 #normal{
-    background-color: #2941e0;
+    background-color: #2941e0a2;
     color: white;
     padding-right: 2px;
-    opacity: 0.6;
     cursor: pointer;
     font-family: sans-serif;
     border: none;
-    transition: color 0.5s ease;
+    transition: all 0.5s ease;
 }
 #font-change button:hover{
    color: #2941e0;
@@ -568,7 +672,8 @@ color: rgb(245, 245, 169);
     width: 70%;
      }
  nav p{
-   font-size: 90%
+    margin-top: 15px;
+   font-size: 70%
  }
 }
 

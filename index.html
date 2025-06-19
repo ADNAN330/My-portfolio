@@ -11,7 +11,7 @@
 <body>
 
     <nav><p onclick="openThis('#about-section')">About</p> <p onclick="openThis('#skills-section')">Skills</p> <p onclick="openThis('#projects-section')">Projects</p>
-         <p onclick="openThis('#documents-section')"> Documents</p> <p id="hours" onclick="toSecret()"></p> </nav>
+       <p onclick="openThis('#gallery-section')">Gallery</p>  <p onclick="openThis('#documents-section')"> Documents</p> <p id="hours" onclick="toSecret()"></p> </nav>
     <div id="top-section">
         <div id="BG"></div>
         <div id="picplace"><img id="pfp" src="Assets/MyProfPic.png" alt="My Profile Picture"></div>
@@ -44,7 +44,7 @@
 
         <div id="about-section">
         <h1 id="about-me" class="main-points">About me:</h1> 
-        <h3>I'm a self-taught  frontend and game developer with a strong foundation in <span id="javascript"> JavaScript </span>, <span id="css"> CSS </span>, <span id="html"> HTML</span>, and <span id="react"> React.JS</span>.</h3>
+        <h3>I'm a self-taught frontend developer, pixel artist, and game developer with a strong foundation in <span id="javascript"> JavaScript </span>, <span id="css"> CSS </span>, <span id="html"> HTML</span>, and <span id="react"> React.JS</span>.</h3>
         <h3 class="content">My journey into web development began with a passion for creating interactive and user-friendly web applications, which has since grown into a continuous pursuit of learning and growth.</h3>
         <h3 id="second-p" class="content">I've navigated the world of web development through a combination of online courses, tutorials, and hands-on practice, constantly pushing myself to master new concepts and tools. </h3>
         </div>
@@ -52,16 +52,22 @@
         <div id="skills-section">
             <h1 id="skills" class="main-points">Skills:</h1>
             <ul id="skills-list">
-                <li><h3>JavaScript</h3><p>I've learnt javascript in my first steps in web development,
-                                          and ever since, I've developed many interactive features and web apps relying on it, it's right to say that JavaScript is the backbone of my web development skills.</p></li>
+                <li><h3>JavaScript</h3><p> learned JavaScript in my first steps into web development, and ever since, I've developed many interactive features and web apps relying on it. It's fair to say that JavaScript is the backbone of my web development skills.</p></li>
                 <li><h3>HTML</h3><p>
-                    I develop well-organized HTML structures for my projects to make them both easy to navigate and have a good optimization for search engines.
+                   I develop well-structured and semantic HTML for my projects, making them easy to navigate and optimized for search engines.
                 </p></li>
                 <li><h3>CSS</h3><p> I Have a great experience in creating and designing a responsive and appealing layouts that work on multiple devices by using CSS.</p></li>
 
-                <li><h3>React.JS</h3><p>I have decent knowledge in this field that allows me to create simple interactive apps for everyday's basic usage.</p></li>
-                <li><h3>Unity game engine and C#</h3> <p>In terms of my skills, unity and C# must have an honorable mention, how not and they are what I've entered the world of programming with! now I can easily say that I have a great experience of approximately <strong>1 and a half years </strong> with them. </p></li>
-
+                <li><h3>React.JS</h3><p>I have solid knowledge of React and use it to build dynamic, user-friendly web apps. I'm comfortable working with components, hooks, and state to create smooth and responsive interfaces.
+                </p></li>
+                
+                <li><h3>Firebase</h3> <p>I use Firebase to manage simple backend logic like user login and data storage. It helps me build complete and functional web apps easily.</p></li>
+                
+                <li><h3>TypeScript</h3> <p>I use TypeScript to write safer and more organized code in my web apps. It helps me catch errors early and keep my projects easier to maintain.</p></li>
+                
+                <li><h3>Unity game engine and C#</h3> <p>Unity and C# are where my programming journey began. I now have around  <strong>one and a half years </strong>of experience building games and interactive projects with them, and I'm confident in my ability to work with both. </p></li>
+                
+                <li><h3>Pixel Art</h3> <p>My most beloved hobby is creating stunning pixel art pieces that reflect my personal themes and style, only by using my pc and some pixels of course. You can view some of them in the gallery section below.</p></li>
             </ul>
         </div>
 
@@ -70,15 +76,33 @@
             <h3 id="projects-description">I've worked on some projects for various purposes, however, the best and worthy of them were published on Github: <br><br>1) <span class="prolinks" onclick="openThis('https://adnan330.github.io/VBook/')">VBook</span>, Which is a frontend website project that its main purpose is to sell, buy, and create virtual books for everyone to read on.<br> <br>
                 2) <span class="prolinks"" onclick="openThis('https://adnan330.github.io/MaalApp/')">MAAL</span>, MAAL is a financial app that was built via ReactJS, this app's purpose is to help user stay financial and know more about what they spend or get by manual adding for each time the user uses his money to buy something for example, or if the user gets some money as to receive a salary for example. All that done in this safe and free service which is called MAAL. <br> <br>
 
-                3) <span class="prolinks"  onclick="openThis('https://adnan330.github.io/WeatherNow/')">WeatherNow</span>,It is a weather web application that shows current weather state, temperature (max and min also), date and day, and other weather information that will help everyone.  <br><br>
+                3) <span class="prolinks"  onclick="openThis('https://adnan330.github.io/WeatherNow/')">WeatherNow</span>,It is a weather web application that shows current weather state, temperature (max and min also), date and day, and other weather information that will help everyone (Unfortunately the website is currently closed for fixing bugs).  <br><br>
+                4) <span class="prolinks"  onclick="openThis('https://riseup-20bbe.web.app/')">RiseUp</span>,My biggest Project so far, which is a minimalist daily task tracker built to help users build momentum and stay consistent with their goals. With a focus on simplicity and personal growth, it lets users create, manage, and complete tasks while earning experience points (XP) as rewards. Whether it's for building habits, tracking progress, or managing simple to-dos, RiseUp turns daily routines into a motivating, game-like experience.
+
+                 The app is still in development, and I'm working consistently to add more features and improvements. <br><br>
                   other than that, there are some tutorial projects like : to-do-list, a subscribtion card,
                  meme/quotes/jokes/riddles generator website, and some mini games on unity that I prefer keeping for myself.(ALso check out this amazing website <a href="https://adnan330.github.io/My-portfolio/">here</a> )   </h3>
         </div>
+        <div id="gallery-section">
+            <h1 id="gallery" class="main-points">Gallery:</h1>
+            <h3>Here are some of my pixel art pieces that I created in my free time, I hope you like them!</h3>
+<br><br>
+            <div id="pixel-container">
+                <h2 id="leftAr"><</h2>
+                <div id="nameAndPic">
+                <div id="wrapper">
+                    <img id="gallery-image" src=Assets/PixelArt/An-Unfamiliar-Sea.png alt="imageToBeShown">
+                </div>
+                <h3 id="image-name">An Unfamiliar Sea</h3>
+                </div>
+                <h2 id="rightAr">></h2>
+            </div>
 
+        </div>
         <div id="documents-section">
-            <h1 class="main-points">Other documents:</h1>
+            <h1 class="main-points">Documents:</h1>
             <ul>
-                <li>Resume/CV: <a href="Assets/AdnanCV2.pdf">Have a look here</a></li>
+                <li>Resume/CV: <a href="Assets/AdnanCV_Level3.pdf">Have a look here</a></li>
                 <li>IELTS grade: 7.0/9.0 <a href="Assets/IELTSGRADE.pdf">Have a look here</a></li>
              
             </ul>
@@ -96,17 +120,17 @@
         <script>
             let pixelButton = document.getElementById("pixel");
             let normalButton = document.getElementById("normal");
-            pixelButton.style.backgroundColor = "white";
-            pixelButton.style.color = "#2941e0";
+            pixelButton.style.backgroundColor = "#ffffff80";
+            pixelButton.style.color = "#1130fc";
             let everything = document.querySelectorAll("*");
             let cSign = document.getElementById("C");
           
 
          function toPixel()
          {
-         pixelButton.style.backgroundColor = "white";
-         pixelButton.style.color = "#2941e0";
-         normalButton.style.backgroundColor = "#2941e0";
+         pixelButton.style.backgroundColor = "#ffffff80";
+         pixelButton.style.color = "#1130fc";
+         normalButton.style.backgroundColor = "#2941e0a2";
          normalButton.style.color = "white";
          everything.forEach(element => {
         element.style.fontFamily = "pixelR12";
@@ -116,16 +140,83 @@
          }
          function toNormal()
          {
-         pixelButton.style.backgroundColor = "#2941e0";
+         pixelButton.style.backgroundColor = "#2941e0a2";
          pixelButton.style.color = "white";
-         normalButton.style.backgroundColor = "white";
-         normalButton.style.color = "#2941e0";
+         normalButton.style.backgroundColor = "#ffffff80";
+         normalButton.style.color = "#1130fc";
          everything.forEach(element => {
         element.style.fontFamily = "sans-serif";
         pixelButton.style.fontFamily = "pixelR12";
          })
          }
-       
+         let images = [
+             'Assets/PixelArt/An-Unfamiliar-Sea.png',
+             'Assets/PixelArt/Blue-Book.png', 
+             'Assets/PixelArt/Blue.png',
+             'Assets/PixelArt/Sakura.png',
+             'Assets/PixelArt/Code.png',
+             'Assets/PixelArt/Crow-Blurred.png',
+             'Assets/PixelArt/Night-City.png',
+             'Assets/PixelArt/Observation.png',
+             'Assets/PixelArt/Purple.png',
+             'Assets/PixelArt/Rain.png',
+             'Assets/PixelArt/Sakura-2.png', 
+             'Assets/PixelArt/Unreal-Life.png'
+                    ]
+                    let currentIndex = 0;
+
+                    const names = [
+                    "An Unfamiliar Sea",
+                    "Blue Book",
+                    "Blue",
+                    "Sakura",
+                    "Code",
+                    "Crow",
+                    "Night City",
+                    "Observation",
+                    "Purple",
+                    "Rain",
+                    "Sakura 2",
+                    "Unreal Life"
+                ];
+                    
+                    const img = document.getElementById("gallery-image");
+                    let autoSlide;
+
+                    function updateImage() {
+                    const img = document.getElementById("gallery-image");
+                    const caption = document.getElementById("image-name");
+                    
+                    img.style.opacity = 0;
+                    
+                    setTimeout(() => {
+                        img.src = images[currentIndex];
+                        caption.textContent = names[currentIndex];
+                        img.style.opacity = 1;
+                    }, 300); // should match or be less than transition time
+                }
+                
+                function startAutoSlide() {
+                    autoSlide = setInterval(() => {
+                        currentIndex = (currentIndex + 1) % images.length;
+                        updateImage();
+                    }, 4000);
+                }
+
+                    
+                    document.getElementById("rightAr").addEventListener("click", () => {
+                         clearInterval(autoSlide);
+                        currentIndex = (currentIndex + 1) % images.length;
+                        updateImage();
+                        startAutoSlide();
+                    });
+                    
+                    document.getElementById("leftAr").addEventListener("click", () => {
+                         clearInterval(autoSlide);
+                        currentIndex = (currentIndex - 1 + images.length) % images.length;
+                        updateImage();
+                        startAutoSlide();
+                    });
             function time()
             {
                 let second = new Date().getSeconds();
@@ -189,7 +280,7 @@
                window.location = "secret.html";
                  c = 0;
                }
-            console.log(c);
+          
                
               }
 
